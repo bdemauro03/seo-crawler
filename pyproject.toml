@@ -1,0 +1,29 @@
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seo-crawler"
+version = "0.1.0"
+description = "A practical SEO crawler that audits a site and exports metadata to CSV/JSON."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Billy" }]
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "lxml",
+    "tldextract",
+    "pandas",
+]
+
+[project.scripts]
+seo-crawler = "seo_crawler.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
