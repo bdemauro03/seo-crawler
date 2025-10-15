@@ -16,6 +16,7 @@ It demonstrates end-to-end problem solving across crawling, parsing, heuristics,
 Crawls starting from a URL (optionally constrained to the same domain).
 
 Extracts core SEO fields:
+```bash
     - <title>, <meta name="description">, first <h1>, canonical URL, robots meta
     - HTTP status, load time (ms), word count
 
@@ -26,6 +27,7 @@ Computes an SEO score (0–100) you can tweak.
 Exports to:
     - reports/seo_audit.csv
     - eports/seo_audit.json
+```
 
 ## Quickstart
 
